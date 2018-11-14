@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>email form</title>
+  </head>
+
+  <body>
+    <form action="/email/form" method="post">
+      검색창 : <input type="text" name="email"> <br/>
+      <input type="submit">
+    </form>
+
+    <button class="ajaxsend">검색</button>
+    <div class="result"></div>
+
+    <script>
+      document.querySelector('.ajaxsend').addEventListener('click', function(){//클래스값이 ajaxsend를 갖는 요소중 첫번째 요소를 쿼리셀렉한다
+        var inputdata = document.forms[0].elements[0].value; //앞에부분은 첫번째 form부분 뒤에부분은 첫번째 email form부분 벨류값은 실제값
+        sendAjax('http://127.0.0.1:3000/email/ajax', inputdata);  //inputdata를 위url로 보낸다 **동일 출처 정책(Same-Origin Policy)확인
+      })
+      //이벤트리스너에 등록
+
+      function sendAjax(url, data){
+        var data = {'email' : data}; //입력값을 변수에 담고 입력값은{} 안에표시
+        data = JSON.stringify(data); //stringify 메소드는 json 객체를 string 객체(문자열형태)로 변환 시켜줌 <-반대는 json,parse(data)***
+        var xhr = new XMLHttpRequest(); //content-type을 설정하고 데이터 송신
+        xhr.open('POST', url); //open모듈 첫번째는 메서드방식 두번째는 url
+        xhr.setRequestHeader('Content-Type', "application/json"); //서버로 json형태로 보낸다는걸 나타내주기위해
+        xhr.send(data); //문자열형태로 변환된것 send
+
+        xhr.addEventListener('load', function(){ //데이터 수신이 완료되면 표시
+          var result = JSON.parse(xhr.responseText); //서버의 리스폰스텍스트값을 json형식으로 바꿔서 result에 넣어줌 (app.js의 응답값 result result.name은 JBJ)
+          var resultDiv = document.querySelector(".result");//document.querySelector(".result")는 div값 중 첫번째(.) result값을의미
+          if(result.result !== "ok") resultDiv.innerHTML = "등록된 정보가 없습니다" //xhr.responseText의 result값이 ok가 아니면 첫번째 result값.innerHTML은 HTML에 출력
+          //else resultDiv.innerHTML = result.name;  //맞으면 result.name을 출력 resultDiv는 div글씨출력부분
+          else resultDiv.innerHTML = (result.name+"님으로 등록되어있습니다.");
+        });
+      }
+      //XMLHttpRequest로 데이터를 보내고 받는다
+      </script>
+
+  </body>
+</html>

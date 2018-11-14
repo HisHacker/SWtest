@@ -1,0 +1,210 @@
+body {
+    margin: 0 0 0 0;
+}
+
+.all {
+  background-color: white;
+
+  width: 100%;
+  border-bottom:1px solid #d2d2d2;
+  border-width: 1px;
+  box-shadow: 0px 1px 1px gray;
+}
+
+#font0 {
+  font-size: 12px;
+}
+
+#font1 {
+  font-size: 12px;
+}
+
+#font2 {
+
+}
+#ph1 {
+  width: 40px;
+  height: 40px;
+  top: 133px;
+  position: absolute;
+  background-image:url("조병준.jpg");
+  border-radius: 60px; /* 레이어 반크기만큼 반경을 잡기*/
+  display: table-cell;
+  vertical-align: middle;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+  margin-left: 690px;
+}
+
+#ph2 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-image:url("조병준.jpg");
+  border-radius: 60px; /* 레이어 반크기만큼 반경을 잡기*/
+  display: table-cell;
+  vertical-align: middle;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+  margin-left: -95px;
+  margin-top: 18px;
+}
+
+#bottom {
+  width : 1000px;
+  height: 0px;
+  position: absolute;
+  float: left;
+}
+
+#bottom1 {
+  width : 730px;
+}
+
+#bottom2 {
+  float: left;
+  margin-left: 190px;
+
+}
+
+#bottom3 {
+  position: absolute;
+  float: right;
+  margin-top: 75px;
+  margin-left: 790px;
+
+}
+
+#button1 {
+
+}
+.left {
+  margin-left: 100px;
+}
+ {
+  font-size: 10px;
+}
+
+#dog0 {
+  position: absolute;
+  float: left;
+  z-index: 1;
+}
+
+#dog1 {
+  float : left;
+  margin-right: 6px;
+}
+
+#dog2 {
+  margin-bottom: 2px;
+}
+
+#icon0 {
+  position: absolute;
+  float : left;
+  z-index: 1;
+}
+
+#a0 {
+  margin-left: 50px;
+  margin-top: 0px;
+}
+
+#icon1 {
+  position: absolute;
+  float : left;
+  z-index: 1;
+}
+
+#a1 {
+  margin-left: 50px;
+  margin-top: 0px;
+}
+
+#icon2 {
+  position: absolute;
+  float : left;
+  z-index: 1;
+}
+
+#a2 {
+  margin-left: 50px;
+  margin-top: 0px;
+}
+#icon3 {
+  position: absolute;
+  float : left;
+  z-index: 1;
+}
+
+#a3 {
+  margin-left: 50px;
+  margin-top: 0px;
+}
+
+.right {
+  background-image:url("block.PNG");
+  position: absolute;
+    float : left;
+    Top : 90px;
+    margin-left: 800px;
+    height: 500px;
+    background-repeat : no-repeat;
+}
+#shop {
+  float: right;
+  margin-top: 7px;
+  margin-right: 90px;
+}
+
+#image {
+  width : 730px;
+ border-bottom:1px solid #d2d2d2;
+}
+
+#line {
+    width : 730px;
+  border-bottom:1px solid #d2d2d2;
+}
+
+button{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Tra-Block</title>
+        <link rel="stylesheet" href="header.css"></link>
+        <link rel="stylesheet" href="common.css"></link>
+        <script src="js/test.js"></script>
+    <style>
+      #right {
+  	     position: absolute;
+  	     top:160px;
+         right:55px;
+  		}
+
+      #right1 {
+         position: absolute;
+         top:290px;
+         right:-15px;
+      }
+
+      #left1 {
+         position: absolute;
+         top:160px;
+         left:50px;
+      }
+
+      .a1 {
+        position: absolute;
+        top:93px;
+        left:50px;
+      }
+
+      .button {
+         position: absolute;
+         top:730px;
+         right:315px;
+      }
+      .button {
+          background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 23px 43px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+      }
+
+      .button1:hover{
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+
+      .menubutton {
+          background-color: #D5D5D5; /* Green */
+          border: none;
+          color: white;
+          padding: 9px 19px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+      }
+
+      .menubutton1 {border-radius: 12px;}
+
+      input {
+          background-color:transparent;
+          border: 0px solid;
+          height:80px;
+          width:120px;
+          margin-left:420px;
+      }
+      input:focus {
+          outline:none;
+      }
+    </style>
+    </head>
+
+    <body>
+        <!-- 전체 크기 500px, 60px -->
+        <div id="header">
+            <img id="logo" src="logo/logo.png"></img>
+
+            <div id="search">
+                <!-- 검색 아이콘 -->
+                <img id="searchicon" src="logo/searchIcon.png"></img>
+                <!-- 검색 창 -->
+                <input id="searchbar" type="text" placeholder="Search"></input>
+
+            </div>
+
+            <a class="headercate" style="float: right; margin-right: 50px">Login</a>
+            <input id="btn_goLogin" type="submit" value="Sing_up" onclick="clickLogin();">
+            <a class="headercate" style="float: right;">Help</a>
+            <a class="headercate" style="float: right;">Guide waiting</a>
+        </div>
+
+        <!-- 여기서 부터 코드 짠거 붙여넣기 -->
+        <div class="a1">
+          <button class="menubutton menubutton1">Date</button>
+          <button class="menubutton menubutton1">Personnel</button>
+          <button class="menubutton menubutton1">Room</button>
+          <button class="menubutton menubutton1">Price</button>
+          <button class="menubutton menubutton1">Reservation</button>
+          <button class="menubutton menubutton1">Type</button>
+          <button class="menubutton menubutton1">Filter</button>
+        </div>
+        <br><br><br>
+
+
+        <div id="left1">
+        <table width="700px" height="115px">
+          <tr>
+            <td rowspan="2" width="130px" style="cursor: pointer"><img src="logo/china.jpg" width=130 height="95"></td>
+            <td>&nbsp [ChinaTown] I will give you an unforgettable trip to Chinatown, Incheon.</td>
+          </tr>
+          <tr>
+            <td>
+            <div style="text-align:right"><br>\25,000<br>★★★★☆</div>
+          </td>
+          </tr>
+        </table>
+
+        <hr width ="700px" align="left">
+        <table width="700px" height="115px">
+          <tr>
+            <td rowspan="2" width="130px"><img src="logo/song.jpg" width=130 height="95"></td>
+            <td>&nbsp [Shinsungru] Cheap Chinatown 1 hour course.</td>
+          </tr>
+          <tr>
+            <td>
+              <div style="text-align:right">\15,000<br>★★★★★</div>
+            </td>
+          </tr>
+        </table>
+
+        <hr width ="700px" align="left">
+        <table width="700px" height="115px">
+          <tr>
+            <td rowspan="2" width="130px"><img src="logo/car.jpg" width=130 height="95"></td>
+            <td>&nbsp [Sunrinmun] A representative attraction of Chinatown.</td>
+          </tr>
+          <tr>
+            <td>
+            <div style="text-align:right">\33,000<br>★★★★☆</div>
+            </td>
+          </tr>
+        </table>
+
+        <hr width ="700px" align="left">
+        <table width="700px" height="115px">
+          <tr>
+            <td rowspan="2" width="130px"><img src="logo/boo.jpg" width=130 height="95"></td>
+            <td>&nbsp [Wolmido & ChinaTown] Wolmido and Chinatown at the same time.</td>
+          </tr>
+          <tr>
+            <td>
+            <div style="text-align:right">\55,000<br>★★★★☆</div>
+          </td>
+          </tr>
+        </table>
+
+        <hr width ="700px" align="left">
+        <table width="700px" height="115px">
+          <tr>
+            <td rowspan="2" width="130px"><img src="logo/sub.jpg" width=130 height="95"></td>
+            <td>&nbsp [ChinaTown] Chinatown's Beauty Shop Guide.</td>
+          </tr>
+          <tr>
+            <td>
+            <div style="text-align:right">\28,000<br>★★★☆☆</div>
+          </td>
+          </tr>
+        </table>
+        <hr width ="700px" align="left">
+        </div>
+
+        <div id="right">
+        <table width="600px" height="300px" cellpadding="6">
+          <tr>
+            <td rowspan="2"><img src="logo/조병준.jpg" width=235 height="290"></td>
+            <td><img src="logo/2.jpg" width=155 height="134"></td>
+            <td rowspan="2"><img src="logo/3.jpg" width=235 height="290"></td>
+          </tr>
+          <tr>
+            <td><img src="logo/4.jpg" width=155 height="134"></td>
+          </tr>
+        </table>
+
+        <div id="right1">
+        <table width="680px" height="300px">
+          <tr>
+            <td>
+              <div style="text-align:left">
+              <h3>Guide Introduction</h3>
+              <br>
+
+              China town is known as the Birthplace of Tibetan Civilization. It lies to the south of the Nyainqentanglha Mountains, along the middle reaches of the Yarlung Zangpo River, and enjoys a comparatively mild climate.
+
+              The town covers an area of around 80,000 square kilometers, with an average altitude of about 3600m and a total population of 320,000, including mostly Monba, but also Tibetan, Han, Hui and Lhoba people.
+
+              China town is the most prosperous and oldest part of Tibet. The well-known Tubo Regime (a historic period in Tibetan history) was derived from the agricultural civilization in Shannan. Shannan was the origin of the Tibetan civilization and became the ruling center twice in Tibetan history
+              </div>
+            </td>
+          </tr>
+        </table>
+        </div>
+        </div>
+        <form action="/next" method="post"><button class="button button1" >Choice!</button>
+        <hr style="border:solid 1.5px black;" width="1420px;">
+
+
+
+
+    </body>
+
+</html>

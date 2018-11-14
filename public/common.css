@@ -1,0 +1,8 @@
+body {
+    font-family: "nanum";
+}
+
+@font-face {
+    font-family: 'nanum';
+    src: url(nanum.ttf) format('truetype');
+}

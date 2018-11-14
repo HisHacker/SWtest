@@ -1,0 +1,92 @@
+#pageleft {
+    float: left;
+}
+
+
+
+#blockplanner {
+    margin: 15px 0 0 50px;
+    font-size: 30px;
+}
+
+#plusbtn {
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 2px;
+
+    box-shadow: 0px 2px 2px gray;
+
+    margin: 15px 0 0 10px;
+
+    float: left;
+}
+
+#plustext {
+    margin: 10px 0 0 0px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#iscanvas {
+    margin: 15px 0 0 50px;
+
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 2px;
+
+}
+
+#pageright {
+    float: left;
+}
+
+.cosename {
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+
+.feelsoo {
+    color: gray;
+}
+
+.inputs {
+    margin-top : 10px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 5px;
+
+    width: 238px;
+    height: 30px;
+}
+
+.inputc {
+    border-style: solid;
+    border-color: gray;
+    border-width: 2px;
+
+}
+
+.jayu {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-top: 15px;
+    border-bottom-style: none;
+    padding-top: 5px;
+}
+
+#jayu2 {
+    border-top-color: darkgray;
+    border-right-color: darkgray;
+
+    border-left-style: none;
+}
